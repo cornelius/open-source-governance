@@ -1,0 +1,20 @@
+{
+  "$schema": "open-source-governance/v1#",
+  "project_name": "openSUSE",
+  "project_url": "https://opensuse.org",
+  "project_founding_date": "?",
+  "organization_name": "none",
+  "development_governance_url": "https://en.opensuse.org/openSUSE:Guiding_principles",
+  "number_committers": "?",
+  "number_code_contributors": "?",
+  "statistics_url": "https://metrics.opensuse.org",
+  "license": "various",
+  "trademark_policy_url": "https://en.opensuse.org/openSUSE:Trademark_guidelines",
+  "licensing_policy_url": "?",
+  "registered_trademarks": "?",
+  "contribution_agreement": "none",
+  "trademark_owner": "SUSE LLC",
+  "code_of_conduct_url": "?",
+  "conflict_resolution_policy_url": "?",
+  "maintainers_list_url": "?"
+}
