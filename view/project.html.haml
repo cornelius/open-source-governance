@@ -1,0 +1,10 @@
+%h1 #{project["project_name"]}
+
+%table
+  - project.each do |key, value|
+    - next if key == "$schema"
+    %tr
+      %td
+        = pretty_attribute(key)
+      %td
+        = link_up(value)

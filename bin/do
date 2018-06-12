@@ -1,0 +1,29 @@
+#!/usr/bin/ruby
+
+require "haml"
+require "json"
+
+require_relative "../lib/do.rb"
+
+base_dir = File.expand_path("../..", __FILE__)
+output_dir = File.join(base_dir, "docs")
+data_dir = File.join(base_dir, "data")
+view_dir = File.join(base_dir, "view")
+
+puts "Generating web page in #{output_dir} ..."
+
+projects = {}
+Dir.entries(data_dir).each do |entry|
+  next if entry.start_with?(".") || entry.start_with?("_")
+
+  json = JSON.parse(File.read(File.join(data_dir, entry)))
+  puts "  #{json["project_name"]}"
+
+  projects[File.basename(entry, ".json")] = json
+end
+
+view = View.new
+view.projects = projects
+
+view.render_index(view_dir, output_dir)
+view.render_projects(view_dir, output_dir)

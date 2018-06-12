@@ -1,0 +1,16 @@
+%h1 Open Source Governance Models
+
+%p
+  This site collects data about open source governance models. Sources are at #{link_up("https://github.com/cornelius/open-source-governance")}
+
+%table
+  %tr
+    %th Name
+    %th Homepage
+  - projects.each do |name, project|
+    %tr
+      %td
+        %a{href: name + ".html"}
+          = project["project_name"]
+      %td
+        = link_up(project["project_url"])
