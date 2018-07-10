@@ -29,10 +29,10 @@ else
   Dir.entries(data_dir).each do |entry|
     next if entry.start_with?(".") || entry.start_with?("_")
 
-    json = JSON.parse(File.read(File.join(data_dir, entry)))
-    puts "  #{json["project_name"]}"
+    yaml = YAML.load_file(File.join(data_dir, entry))
+    puts "  #{yaml["project_name"]}"
 
-    projects[File.basename(entry, ".json")] = json
+    projects[File.basename(entry, ".yaml")] = yaml
   end
 
   view = View.new
