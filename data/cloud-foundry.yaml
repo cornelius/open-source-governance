@@ -1,0 +1,27 @@
+---
+"$schema": open-source-governance/v1#
+project_name: Cloud Foundry
+project_url: https://cloudfoundry.org
+project_founding_date: '2009'
+organization_name: Cloud Foundry Foundation
+organization_type: independent not-for-profit 501(c)(6) Linux Foundation Collaborative
+  Project
+organization_country: USA
+organization_founding_date: '2014'
+organization_url: https://www.cloudfoundry.org/foundation/
+organization_bylaws_url: https://www.cloudfoundry.org/governance/cff_bylaws/
+development_governance_url: https://www.cloudfoundry.org/governance/cff_development_governance/
+organization_maximum_corporate_membership_fee: 500000 USD
+number_committers: hundreds
+number_code_contributors: '3000'
+statistics_url: https://cloudfoundry.biterg.io/
+license: Apache 2.0
+trademark_policy_url: https://www.cloudfoundry.org/trademark/
+licensing_policy_url: https://www.cloudfoundry.org/wp-content/uploads/2017/01/CFF_IP_Policy.pdf
+registered_trademarks: BOSH, CLOUD FOUNDRY, CLOUD FOUNDRY FOUNDATION, CLOUD FOUNDRY
+  CERTIFIED, CF, OPEN SERVICE BROKER API, ...
+contribution_agreement: CLA
+trademark_owner: Cloud Foundry Foundation
+code_of_conduct_url: https://www.cloudfoundry.org/code-of-conduct/
+conflict_resolution_policy_url: "?"
+maintainers_list_url: https://docs.google.com/spreadsheets/d/1hg0EA3aB9wiCq8SgCU90ft4qrHvczsUjK0W_31APWxM/edit

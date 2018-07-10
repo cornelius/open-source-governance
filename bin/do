@@ -2,6 +2,7 @@
 
 require "haml"
 require "json"
+require "yaml"
 
 require_relative "../lib/do.rb"
 
@@ -10,20 +11,33 @@ output_dir = File.join(base_dir, "docs")
 data_dir = File.join(base_dir, "data")
 view_dir = File.join(base_dir, "view")
 
-puts "Generating web page in #{output_dir} ..."
+if ARGV[0] == "convert"
+  puts "Converting..."
+  Dir.entries(data_dir).each do |entry|
+    next if entry.start_with?(".") || entry.start_with?("_")
 
-projects = {}
-Dir.entries(data_dir).each do |entry|
-  next if entry.start_with?(".") || entry.start_with?("_")
+    json = JSON.parse(File.read(File.join(data_dir, entry)))
+    puts "  #{json["project_name"]}"
 
-  json = JSON.parse(File.read(File.join(data_dir, entry)))
-  puts "  #{json["project_name"]}"
+    target_file = File.join(data_dir, entry.gsub("json", "yaml"))
+    File.write(target_file, json.to_yaml)
+  end
+else
+  puts "Generating web page in #{output_dir} ..."
 
-  projects[File.basename(entry, ".json")] = json
+  projects = {}
+  Dir.entries(data_dir).each do |entry|
+    next if entry.start_with?(".") || entry.start_with?("_")
+
+    json = JSON.parse(File.read(File.join(data_dir, entry)))
+    puts "  #{json["project_name"]}"
+
+    projects[File.basename(entry, ".json")] = json
+  end
+
+  view = View.new
+  view.projects = projects
+
+  view.render_index(view_dir, output_dir)
+  view.render_projects(view_dir, output_dir)
 end
-
-view = View.new
-view.projects = projects
-
-view.render_index(view_dir, output_dir)
-view.render_projects(view_dir, output_dir)
