@@ -26,7 +26,7 @@ else
   puts "Generating web page in #{output_dir} ..."
 
   projects = {}
-  Dir.entries(data_dir).each do |entry|
+  Dir.entries(data_dir).sort.each do |entry|
     next if entry.start_with?(".") || entry.start_with?("_")
 
     yaml = YAML.load_file(File.join(data_dir, entry))
