@@ -8,4 +8,4 @@ There is a simple web site generated from the data available in the `docs` direc
 
 If you have questions or comments please don't hesitate to open an issue or contact Cornelius Schumacher <schumacher@kde.org>.
 
-Code and data is published under the GPL.
+The code is published under the MIT license. The data in the `data` directory is [public domain](https://creativecommons.org/publicdomain/zero/1.0/).
