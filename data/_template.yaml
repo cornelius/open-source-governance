@@ -24,7 +24,7 @@ project_url: ?
 project_founding_date: ?
 # Name of the organization providing governance to the project
 organization_name: ?
-# Type of organization. Examples would be US "501(c)(6)"" or German "Eingetragener Verein"
+# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
 organization_type: ?
 # Country where the organization is incorporated
 organization_country: ?
