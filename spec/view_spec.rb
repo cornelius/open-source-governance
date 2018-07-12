@@ -19,5 +19,9 @@ describe View do
     it "create hyperlink for http URL" do
       expect(subject.link_up("https://example.org")).to eq("<a href='https://example.org'>example.org</a>")
     end
+
+    it "does not fail on date" do
+      expect(subject.link_up(2018)).to eq (2018)
+    end
   end
 end

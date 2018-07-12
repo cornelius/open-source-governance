@@ -1,26 +1,4 @@
 ---
-# This is a template for storing data of the governance model of an open source project.
-# Fill out the fields and contribute it to https://github.com/cornelius/open-source-governance
-# to get it listed in the governance model map which is hosted there.
-#
-# The type of the fields is not strictly defined. Try to be as exact as you can, but feel free
-# to resort to text if you don't have exact data. Add comments to provide additional context
-# such as the source of the data.
-#
-# Sometimes there is no clear value for an attribute. Use the following convention to indicate
-# why a value is missing:
-#
-#   ?              - not checked yet
-#   none           - the project specifically does not have this
-#   not applicable - this attribute is not applicable to this project
-#
-# Note that we make a difference between project and organization here. The project is the
-# group and effort writing the code. The organization is the formal entity providing governance,
-# legal, and financial support. This could be a non-profit organization or a company. Some
-# projects don't even have a formal organization behind.
-#
-# Refer to the comments in the template for an explanation of the fields.
-
 # Version of the YAML schema used for this file
 "$schema": open-source-governance/v1#
 # Display name of the open source project
@@ -44,21 +22,21 @@ organization_bylaws_url: https://www.spi-inc.org/corporate/by-laws/
 # Link to document defining the technical governance of the project
 development_governance_url: https://wiki.postgresql.org/wiki/Developer_and_Contributor_Resources
 # Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: ?
+organization_maximum_corporate_membership_fee: "?"
 # Number of current committers, i.e. people who have write access to the source code
-number_committers: ?
+number_committers: "?"
 # Number of current contributors, i.e. people who have written code within the last 12 months
-number_code_contributors: ?
+number_code_contributors: "?"
 # Link to page with contribution and other statistics
-statistics_url: ?
+statistics_url: "?"
 # Primary license used by the project
 license: PostgreSQL
 # Link to the trademark policy
 trademark_policy_url: https://wiki.postgresql.org/wiki/Trademark_Policy
 # Link to the licensing policy
-licensing_policy_url: ?
+licensing_policy_url: "?"
 # List of registered trademarks
-registered_trademarks: "PostgreSQL", PostgreSQL elephant logo
+registered_trademarks: PostgreSQL, PostgreSQL elephant logo
 # Type of contribution agreement used or required by the project
 contribution_agreement: none
 # Owner of the trademarks
@@ -66,8 +44,8 @@ trademark_owner: https://www.postgres.ca/
 # Link to the code of conduct
 code_of_conduct_url: https://wiki.postgresql.org/wiki/Code_of_Conduct
 # Link to policy about resolving people conflicts
-conflict_resolution_policy_url: ?
+conflict_resolution_policy_url: "?"
 # Link to list of maintainers/committers
-maintainers_list_url: ?
+maintainers_list_url: "?"
 # Link to annual report of the organization
 annual_report: https://www.spi-inc.org/corporate/annual-reports/

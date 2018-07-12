@@ -35,11 +35,11 @@ class View
     words.map { |word| word.capitalize }.join(" ")
   end
 
-  def link_up(url)
-    if url.start_with?("http")
-      "<a href='#{url}'>#{url.gsub(/^https:\/\//,"")}</a>"
+  def link_up(text)
+    if text.is_a?(String) && text.start_with?("http")
+      "<a href='#{text}'>#{text.gsub(/^https:\/\//,"")}</a>"
     else
-      url
+      text
     end
   end
 end
