@@ -1,51 +1,27 @@
 ---
-# Version of the YAML schema used for this file
 "$schema": open-source-governance/v1#
-# Display name of the open source project
 project_name: Linux Kernel
-# Main URL of the project
 project_url: https://www.kernel.org
-# Date when the project was founded. Use an ISO date. If day or month is not know, leave it out.
 project_founding_date: 1991-09-17 # initial release
-# Name of the organization providing governance to the project
 organization_name: The Linux Kernel Organization
-# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
 organization_type: 501(c)3
-# Country where the organization is incorporated
 organization_country: United States
-# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
 organization_founding_date: 2002
-# Main URL of the organization
 organization_url: https://www.kernel.org/nonprofit.html
-# Link to bylaws of the organization
 organization_bylaws_url: "?"
-# Link to document defining the technical governance of the project
 development_governance_url: "?"
-# Maximum fee for corporate members of the organization
 organization_maximum_corporate_membership_fee: "?"
-# Number of current committers, i.e. people who have write access to the source code
 number_committers: 1
-# Number of current contributors, i.e. people who have written code within the last 12 months
 number_code_contributors: thousands
-# Link to page with contribution and other statistics
 statistics_url: "?"
-# Primary license used by the project
 license: GPL
-# Link to the trademark policy
 trademark_policy_url: https://www.linuxmark.org/
-# Link to the licensing policy
 licensing_policy_url: "?"
-# List of registered trademarks
 registered_trademarks: Linux
-# Type of contribution agreement used or required by the project
 contribution_agreement: DCO
-# Owner of the trademarks
 trademark_owner: Linus Torvalds
-# Link to the code of conduct
 code_of_conduct_url: "?"
-# Link to policy about resolving people conflicts
 conflict_resolution_policy_url: "?"
-# Link to list of maintainers/committers
 maintainers_list_url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/MAINTAINERS
-# Link to annual report of the organization
 annual_report: "?"
+project_wikidata_id: Q14579

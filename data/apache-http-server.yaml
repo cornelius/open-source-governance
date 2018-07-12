@@ -6,7 +6,7 @@ project_founding_date: '1995'
 organization_name: The Apache Software Foundation
 organization_type: US 501(c)(3)
 organization_country: United States
-organization_founding_date: '1999'
+organization_founding_date: '1999-06-01'
 organization_url: http://www.apache.org/foundation/
 organization_bylaws_url: http://www.apache.org/foundation/bylaws.html
 development_governance_url: https://httpd.apache.org/dev/
@@ -23,3 +23,5 @@ trademark_owner: The Apache Software Foundation
 code_of_conduct_url: http://www.apache.org/foundation/policies/conduct.html
 conflict_resolution_policy_url: "?"
 maintainers_list_url: https://projects.apache.org/committee.html?httpd
+project_wikidata_id: Q11354
+organization_wikidata_id: Q489709

@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+
+require "open-uri"
+require "nokogiri"
+require "yaml"
+
+base_dir = File.expand_path("../..", __FILE__)
+data_dir = File.join(base_dir, "data")
+
+def get_inception_date(wikidata_id)
+  str = open("https://query.wikidata.org/sparql?query=SELECT%20%3Finception%20WHERE%20%7B%0A%20%20%20wd%3A#{wikidata_id}%20wdt%3AP571%20%3Finception%0A%7D%0A")
+  doc = Nokogiri::XML(str)
+  result = doc.css("literal").text
+  if result.empty?
+    nil
+  else
+    Date.parse(result)
+  end
+end
+
+def sync_inception_date(yaml, entity_type)
+  wikidata_id = yaml["#{entity_type}_wikidata_id"]
+  if !wikidata_id
+    puts "    No #{entity_type} Wikidata id. Skipping..."
+  else
+    inception_date = get_inception_date(wikidata_id)
+    if inception_date
+      print "    #{entity_type.capitalize} inception date: #{inception_date} "
+      yaml_inception_date = yaml["#{entity_type}_founding_date"]
+      if inception_date == yaml_inception_date
+        puts " (in sync)"
+      else
+        puts " (yaml: #{yaml_inception_date})"
+      end
+    else
+      puts "    No #{entity_type} inception date found."
+    end
+  end
+end
+
+puts "Syncing"
+Dir.entries(data_dir).each do |entry|
+  next if entry.start_with?(".") || entry.start_with?("_")
+
+  filename = File.join(data_dir, entry)
+
+  yaml = YAML.load_file(filename)
+  puts "  #{yaml["project_name"]}"
+
+  sync_inception_date(yaml, "project")
+  sync_inception_date(yaml, "organization")
+end
