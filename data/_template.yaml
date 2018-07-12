@@ -7,6 +7,13 @@
 # to resort to text if you don't have exact data. Add comments to provide additional context
 # such as the source of the data.
 #
+# Sometimes there is no clear value for an attribute. Use the following convention to indicate
+# why a value is missing:
+#
+#   ?              - not checked yet
+#   none           - the project specifically does not have this
+#   not applicable - this attribute is not applicable to this project
+#
 # Note that we make a difference between project and organization here. The project is the
 # group and effort writing the code. The organization is the formal entity providing governance,
 # legal, and financial support. This could be a non-profit organization or a company. Some
