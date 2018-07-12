@@ -68,7 +68,7 @@ organization_name: "?"
 # Main URL of the organization
 organization_url: "?"
 # Wikidata id of organization. Search for it on https://www.wikidata.org.
-project_wikidata_id: "?"
+organization_wikidata_id: "?"
 # Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
 organization_type: "?"
 # Country where the organization is incorporated
