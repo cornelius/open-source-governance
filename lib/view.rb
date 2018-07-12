@@ -1,32 +1,30 @@
 class View
-  attr_accessor :projects, :project
+  attr_accessor :projects, :project, :content
 
-  def render_index(view_dir, output_dir)
-    template = File.read(File.join(view_dir, "index.html.haml"))
+  def render_page(view_dir, output_dir, template, page)
+    layout = File.read(File.join(view_dir, "layout.html.haml"))
 
-    layout_engine = Haml::Engine.new(template)
+    template = File.read(File.join(view_dir, "#{template}.html.haml"))
 
-    output_path = File.join(output_dir, "index.html")
+    template_engine = Haml::Engine.new(template)
+    @content = template_engine.render(binding)
+
+    layout_engine = Haml::Engine.new(layout)
+
+    output_path = File.join(output_dir, "#{page}.html")
     File.open output_path, "w" do |file|
       file.puts layout_engine.render(binding)
     end
+  end
+
+  def render_index(view_dir, output_dir)
+    render_page(view_dir, output_dir, "index", "index")
   end
 
   def render_projects(view_dir, output_dir)
     projects.each do |name, project|
       @project = project
-      render_project(view_dir, output_dir, name)
-    end
-  end
-
-  def render_project(view_dir, output_dir, name)
-    template = File.read(File.join(view_dir, "project.html.haml"))
-
-    layout_engine = Haml::Engine.new(template)
-
-    output_path = File.join(output_dir, "#{name}.html")
-    File.open output_path, "w" do |file|
-      file.puts layout_engine.render(binding)
+      render_page(view_dir, output_dir, "project", name)
     end
   end
 

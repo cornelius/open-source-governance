@@ -1,0 +1,27 @@
+.content {
+  width: 800px;
+  margin: auto;
+}
+
+td {
+  padding: 6px;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 1px 0;
+  border-color: #eee;
+}
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
