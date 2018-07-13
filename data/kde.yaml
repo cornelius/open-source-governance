@@ -14,7 +14,7 @@ organization_maximum_corporate_membership_fee: 10000 EUR
 number_committers: thousands
 number_code_contributors: thousands
 statistics_url: "?"
-license: GPL
+license: GPL-3.0-or-later
 trademark_policy_url: none
 licensing_policy_url: https://community.kde.org/Policies/Licensing_Policy
 registered_trademarks: KDE

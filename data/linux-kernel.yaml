@@ -14,7 +14,7 @@ organization_maximum_corporate_membership_fee: "?"
 number_committers: 1
 number_code_contributors: thousands
 statistics_url: "?"
-license: GPL
+license: GPL-2.0-only
 trademark_policy_url: https://www.linuxmark.org/
 licensing_policy_url: "?"
 registered_trademarks: Linux

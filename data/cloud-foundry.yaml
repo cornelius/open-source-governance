@@ -14,7 +14,7 @@ organization_maximum_corporate_membership_fee: 500000 USD
 number_committers: hundreds
 number_code_contributors: '3000'
 statistics_url: https://cloudfoundry.biterg.io/
-license: Apache 2.0
+license: Apache-2.0
 trademark_policy_url: https://www.cloudfoundry.org/trademark/
 licensing_policy_url: https://www.cloudfoundry.org/wp-content/uploads/2017/01/CFF_IP_Policy.pdf
 registered_trademarks: BOSH, CLOUD FOUNDRY, CLOUD FOUNDRY FOUNDATION, CLOUD FOUNDRY

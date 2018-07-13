@@ -14,7 +14,7 @@ organization_maximum_corporate_membership_fee: USD 500k
 number_committers: "?"
 number_code_contributors: "?"
 statistics_url: http://projects.eclipse.org/
-license: EPL
+license: EPL-2.0
 trademark_policy_url: https://www.eclipse.org/legal/logo_guidelines.php
 licensing_policy_url: https://www.eclipse.org/legal/
 registered_trademarks: https://www.eclipse.org/projects/tools/trademarks.php

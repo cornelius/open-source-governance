@@ -44,7 +44,7 @@ maintainers_list_url: "?"
 # Link to page with contribution and other statistics
 statistics_url: "?"
 
-# Primary license used by the project
+# Primary license used by the project. Use an SPDX identifier (https://spdx.org/licenses/)
 license: "?"
 # Link to the licensing policy
 licensing_policy_url: "?"
