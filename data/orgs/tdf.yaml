@@ -3,20 +3,20 @@
 "$schema": open-source-governance/org/v1#
 
 # Name of the organization providing governance to the project
-organization_name: "The Document Foundation"
+name: "The Document Foundation"
 # Main URL of the organization
-organization_url: "https://www.documentfoundation.org"
+url: "https://www.documentfoundation.org"
 # Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "Q313103"
+wikidata_id: "Q313103"
 # Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "Charitable Foundation under German law (gemeinnützige rechtsfähige Stiftung des bürgerlichen Rechts)"
+type: "Charitable Foundation under German law (gemeinnützige rechtsfähige Stiftung des bürgerlichen Rechts)"
 # Country where the organization is incorporated
-organization_country: "Germany"
+country: "Germany"
 # Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "2012-02-17"
+founding_date: "2012-02-17"
 # Link to bylaws of the organization
-organization_bylaws_url: "https://www.documentfoundation.org/foundation/statutes/"
+bylaws_url: "https://www.documentfoundation.org/foundation/statutes/"
 # Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: none
+maximum_corporate_membership_fee: none
 # Link to annual report of the organization
-organization_annual_report: "https://www.documentfoundation.org/foundation/financials/"
+annual_report: "https://www.documentfoundation.org/foundation/financials/"

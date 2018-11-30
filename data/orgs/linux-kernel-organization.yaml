@@ -1,10 +1,10 @@
 ---
 "$schema": open-source-governance/org/v1#
-organization_name: The Linux Kernel Organization
-organization_type: 501(c)3
-organization_country: United States
-organization_founding_date: 2002
-organization_url: https://www.kernel.org/nonprofit.html
-organization_bylaws_url: "?"
-organization_maximum_corporate_membership_fee: "?"
-organization_annual_report: "?"
+name: The Linux Kernel Organization
+type: 501(c)3
+country: United States
+founding_date: 2002
+url: https://www.kernel.org/nonprofit.html
+bylaws_url: "?"
+maximum_corporate_membership_fee: "?"
+annual_report: "?"

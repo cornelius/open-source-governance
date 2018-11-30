@@ -2,6 +2,7 @@ class Model
   attr_reader :projects, :orgs
 
   def read_projects(data_dir)
+    puts "Reading projects..."
     @projects = {}
     Dir.entries(data_dir).sort.each do |entry|
       next if !entry.end_with?(".yaml") || entry.start_with?("_")
@@ -19,13 +20,14 @@ class Model
   end
 
   def read_orgs(data_dir)
+    puts "Reading organizations..."
     @orgs = {}
     dir = File.join(data_dir, "orgs")
     Dir.entries(dir).sort.each do |entry|
       next if !entry.end_with?(".yaml") || entry.start_with?("_")
 
       yaml = YAML.load_file(File.join(dir, entry))
-      puts "  #{yaml["organization_name"]}"
+      puts "  #{yaml["name"]}"
 
       @orgs[File.basename(entry, ".yaml")] = yaml
     end

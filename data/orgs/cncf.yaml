@@ -1,20 +1,20 @@
 ---
 "$schema": open-source-governance/org/v1#
 # Name of the organization providing governance to the project
-organization_name: "Cloud Native Computing Foundation"
+name: "Cloud Native Computing Foundation"
 # Main URL of the organization
-organization_url: "https://www.cncf.io/"
+url: "https://www.cncf.io/"
 # Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "Q50866964"
+wikidata_id: "Q50866964"
 # Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "Linux Foundation Project"
+type: "Linux Foundation Project"
 # Country where the organization is incorporated
-organization_country: "United States"
+country: "United States"
 # Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "2015"
+founding_date: "2015"
 # Link to bylaws of the organization
-organization_bylaws_url: "https://www.cncf.io/about/charter/"
+bylaws_url: "https://www.cncf.io/about/charter/"
 # Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: "370.000 USD"
+maximum_corporate_membership_fee: "370.000 USD"
 # Link to annual report of the organization
-organization_annual_report: "https://www.cncf.io/cncf-annual-report-2017/"
+annual_report: "https://www.cncf.io/cncf-annual-report-2017/"

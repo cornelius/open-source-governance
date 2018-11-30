@@ -3,20 +3,20 @@
 "$schema": open-source-governance/org/v1#
 
 # Name of the organization providing governance to the project
-organization_name: "SPI"
+name: "SPI"
 # Main URL of the organization
-organization_url: "?"
+url: "?"
 # Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "Q685777"
+wikidata_id: "Q685777"
 # Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "?"
+type: "?"
 # Country where the organization is incorporated
-organization_country: "?"
+country: "?"
 # Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "?"
+founding_date: "?"
 # Link to bylaws of the organization
-organization_bylaws_url: "?"
+bylaws_url: "?"
 # Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: "?"
+maximum_corporate_membership_fee: "?"
 # Link to annual report of the organization
-organization_annual_report: "?"
+annual_report: "?"
