@@ -1,0 +1,10 @@
+---
+"$schema": open-source-governance/org/v1#
+organization_name: The Apache Software Foundation
+organization_type: US 501(c)(3)
+organization_country: United States
+organization_founding_date: '1999-06-01'
+organization_url: http://www.apache.org/foundation/
+organization_bylaws_url: http://www.apache.org/foundation/bylaws.html
+organization_maximum_corporate_membership_fee: USD 125 # There is no corporate membership. The maximum fee is the platinum sponsorship level.
+organization_wikidata_id: Q489709

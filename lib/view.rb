@@ -1,5 +1,9 @@
 class View
-  attr_accessor :projects, :project, :content
+  attr_accessor :model, :project, :org, :content
+
+  def projects
+    model.projects
+  end
 
   def render_page(view_dir, output_dir, template, page)
     layout = File.read(File.join(view_dir, "layout.html.haml"))
@@ -22,8 +26,14 @@ class View
   end
 
   def render_projects(view_dir, output_dir)
-    projects.each do |name, project|
+    model.projects.each do |name, project|
       @project = project
+      org = project["organization"]
+      if org
+        @org = model.orgs[org]
+      else
+        @org = nil
+      end
       render_page(view_dir, output_dir, "project", name)
     end
   end

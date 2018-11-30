@@ -3,8 +3,17 @@
 %table
   - project.each do |key, value|
     - next if key == "$schema"
-    %tr
-      %td
-        = pretty_attribute(key)
-      %td
-        = link_up(value)
+    - if key == "organization" && key != "none" && org
+      - org.each do |key, value|
+      - next if key == "$schema"
+        %tr
+          %td
+            = pretty_attribute(key)
+          %td
+            = link_up(value)
+    - else
+      %tr
+        %td
+          = pretty_attribute(key)
+        %td
+          = link_up(value)

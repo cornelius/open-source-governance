@@ -25,18 +25,11 @@ if ARGV[0] == "convert"
 else
   puts "Generating web page in #{output_dir} ..."
 
-  projects = {}
-  Dir.entries(data_dir).sort.each do |entry|
-    next if entry.start_with?(".") || entry.start_with?("_")
-
-    yaml = YAML.load_file(File.join(data_dir, entry))
-    puts "  #{yaml["project_name"]}"
-
-    projects[File.basename(entry, ".yaml")] = yaml
-  end
+  model = Model.new
+  model.read(data_dir)
 
   view = View.new
-  view.projects = projects
+  view.model = model
 
   view.render_index(view_dir, output_dir)
   view.render_projects(view_dir, output_dir)

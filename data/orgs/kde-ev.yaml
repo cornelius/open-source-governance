@@ -1,0 +1,10 @@
+---
+"$schema": open-source-governance/org/v1#
+organization_name: KDE e.V.
+organization_type: Gemeinnütziger Verein
+organization_country: Germany
+organization_founding_date: 1997-11-27
+organization_url: https://ev.kde.org
+organization_bylaws_url: https://ev.kde.org/corporate/statutes.php
+organization_maximum_corporate_membership_fee: 10000 EUR
+organization_wikidata_id: Q2655191

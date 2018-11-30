@@ -3,7 +3,6 @@
 project_name: openSUSE
 project_url: https://opensuse.org
 project_founding_date: "?"
-organization_name: none
 development_governance_url: https://en.opensuse.org/openSUSE:Guiding_principles
 number_committers: "?"
 number_code_contributors: "?"
@@ -18,3 +17,4 @@ code_of_conduct_url: https://en.opensuse.org/openSUSE:Conference_code_of_conduct
 conflict_resolution_policy_url: "?"
 maintainers_list_url: "?"
 project_wikidata_id: Q16691
+organization: none

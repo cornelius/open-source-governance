@@ -63,21 +63,4 @@ code_of_conduct_url: "https://www.documentfoundation.org/foundation/code-of-cond
 # Link to policy about resolving people conflicts
 conflict_resolution_policy_url: "https://www.documentfoundation.org/foundation/code-of-conduct/"
 
-# Name of the organization providing governance to the project
-organization_name: "The Document Foundation"
-# Main URL of the organization
-organization_url: "https://www.documentfoundation.org"
-# Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "Q313103"
-# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "Charitable Foundation under German law (gemeinnützige rechtsfähige Stiftung des bürgerlichen Rechts)"
-# Country where the organization is incorporated
-organization_country: "Germany"
-# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "2012-02-17"
-# Link to bylaws of the organization
-organization_bylaws_url: "https://www.documentfoundation.org/foundation/statutes/"
-# Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: none
-# Link to annual report of the organization
-organization_annual_report: "https://www.documentfoundation.org/foundation/financials/"
+organization: tdf

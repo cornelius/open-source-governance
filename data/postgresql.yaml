@@ -3,14 +3,7 @@
 project_name: PostgreSQL
 project_url: https://www.postgresql.org/
 project_founding_date: 1996-07-08 # initial release
-organization_name: SPI
-organization_type: 501(c)(3)
-organization_country: United States
-organization_founding_date: 1997-06-16
-organization_url: https://www.spi-inc.org/
-organization_bylaws_url: https://www.spi-inc.org/corporate/by-laws/
 development_governance_url: https://wiki.postgresql.org/wiki/Developer_and_Contributor_Resources
-organization_maximum_corporate_membership_fee: "?"
 number_committers: "?"
 number_code_contributors: "?"
 statistics_url: "?"
@@ -23,6 +16,5 @@ trademark_owner: https://www.postgres.ca/
 code_of_conduct_url: https://wiki.postgresql.org/wiki/Code_of_Conduct
 conflict_resolution_policy_url: "?"
 maintainers_list_url: "?"
-organization_annual_report: https://www.spi-inc.org/corporate/annual-reports/
 project_wikidata_id: Q192490
-organization_wikidata_id: Q685777
+organization: spi

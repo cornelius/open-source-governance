@@ -1,0 +1,22 @@
+---
+# Version of the YAML schema used for this file. v1 is going to change without notice. Later versions will be kept stable.
+"$schema": open-source-governance/org/v1#
+
+# Name of the organization providing governance to the project
+organization_name: "Software Freedom Conservancy"
+# Main URL of the organization
+organization_url: "https://sfconservancy.org/"
+# Wikidata id of organization. Search for it on https://www.wikidata.org.
+organization_wikidata_id: "Q2896872"
+# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
+organization_type: "501(c)(3)"
+# Country where the organization is incorporated
+organization_country: "United States"
+# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
+organization_founding_date: "2006-04-07"
+# Link to bylaws of the organization
+organization_bylaws_url: "https://sfconservancy.org/docs/conservancy_by-laws.pdf"
+# Maximum fee for corporate members of the organization
+organization_maximum_corporate_membership_fee: "?"
+# Link to annual report of the organization
+organization_annual_report: "https://sfconservancy.org/about/filings/"

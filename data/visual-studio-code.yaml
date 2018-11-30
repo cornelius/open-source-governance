@@ -40,21 +40,4 @@ code_of_conduct_url: "https://github.com/Microsoft/vscode/blob/master/CODE_OF_CO
 # Link to policy about resolving people conflicts
 conflict_resolution_policy_url: "?"
 
-# Name of the organization providing governance to the project
-organization_name: "none"
-# Main URL of the organization
-organization_url: "not applicable"
-# Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "not applicable"
-# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "not applicable"
-# Country where the organization is incorporated
-organization_country: "not applicable"
-# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "not applicable"
-# Link to bylaws of the organization
-organization_bylaws_url: "not applicable"
-# Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: "not applicable"
-# Link to annual report of the organization
-organization_annual_report: "not applicable"
+organization: none

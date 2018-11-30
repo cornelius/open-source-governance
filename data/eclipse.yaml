@@ -3,14 +3,7 @@
 project_name: Eclipse
 project_url: http://www.eclipse.org/
 project_founding_date: 7 Nov 2001
-organization_name: Eclipse Foundation
-organization_type: US 501(c)(6)
-organization_country: United States
-organization_founding_date: '2004-02-02'
-organization_url: https://www.eclipse.org/org/foundation/
-organization_bylaws_url: https://www.eclipse.org/org/documents/Eclipse%20BYLAWS%202011_08_15%20Final.pdf
 development_governance_url: https://www.eclipse.org/projects/dev_process/development_process.php
-organization_maximum_corporate_membership_fee: USD 500k
 number_committers: "?"
 number_code_contributors: "?"
 statistics_url: http://projects.eclipse.org/
@@ -23,6 +16,5 @@ trademark_owner: The Eclipse Foundation
 code_of_conduct_url: https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php
 conflict_resolution_policy_url: "?"
 maintainers_list_url: http://projects.eclipse.org/
-organization_annual_report: https://www.eclipse.org/org/foundation/reports/annual_report.php
 project_wikidata_id: Q82268
-organization_wikidata_id: Q937756
+organization: eclipse-foundation

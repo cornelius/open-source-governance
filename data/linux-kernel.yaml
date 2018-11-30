@@ -3,14 +3,7 @@
 project_name: Linux Kernel
 project_url: https://www.kernel.org
 project_founding_date: 1991-09-17 # initial release
-organization_name: The Linux Kernel Organization
-organization_type: 501(c)3
-organization_country: United States
-organization_founding_date: 2002
-organization_url: https://www.kernel.org/nonprofit.html
-organization_bylaws_url: "?"
 development_governance_url: "?"
-organization_maximum_corporate_membership_fee: "?"
 number_committers: 1
 number_code_contributors: thousands
 statistics_url: "?"
@@ -23,5 +16,5 @@ trademark_owner: Linus Torvalds
 code_of_conduct_url: "?"
 conflict_resolution_policy_url: "?"
 maintainers_list_url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/MAINTAINERS
-organization_annual_report: "?"
 project_wikidata_id: Q14579
+organization: linux-kernel-organization
