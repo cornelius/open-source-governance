@@ -19,6 +19,9 @@
 # legal, and financial support. This could be a non-profit organization or a company. Some
 # projects don't even have a formal organization behind.
 #
+# The data of the organizations is entered in the `orgs` sub directory. There is an extra
+# template file there.
+#
 # Refer to the comments in the template for an explanation of the fields.
 
 # Version of the YAML schema used for this file. v1 is going to change without notice. Later versions will be kept stable.
@@ -63,21 +66,6 @@ code_of_conduct_url: "?"
 # Link to policy about resolving people conflicts
 conflict_resolution_policy_url: "?"
 
-# Name of the organization providing governance to the project
-organization_name: "?"
-# Main URL of the organization
-organization_url: "?"
-# Wikidata id of organization. Search for it on https://www.wikidata.org.
-organization_wikidata_id: "?"
-# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
-organization_type: "?"
-# Country where the organization is incorporated
-organization_country: "?"
-# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
-organization_founding_date: "?"
-# Link to bylaws of the organization
-organization_bylaws_url: "?"
-# Maximum fee for corporate members of the organization
-organization_maximum_corporate_membership_fee: "?"
-# Link to annual report of the organization
-organization_annual_report: "?"
+# Key of organization. There must be a file in data/orgs/ with the name `<key>.yaml`
+# If there is no organization put in "none"
+organization: "?"
