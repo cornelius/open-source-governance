@@ -2,18 +2,21 @@
 
 %table
   - project.each do |key, value|
+    - next if key == "$schema" || key == "organization"
+    %tr
+      %td
+        = pretty_attribute(key)
+      %td
+        = link_up(value)
+
+- if org
+  %h2 Organization
+  %table
+    - org.each do |key, value|
     - next if key == "$schema"
-    - if key == "organization" && key != "none" && org
-      - org.each do |key, value|
-      - next if key == "$schema"
-        %tr
-          %td
-            = pretty_attribute(key)
-          %td
-            = link_up(value)
-    - else
       %tr
         %td
           = pretty_attribute(key)
         %td
           = link_up(value)
+
