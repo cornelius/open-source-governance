@@ -31,7 +31,8 @@
       %td
         = link_up(org["url"])
 
-%h2 Code of conducts
+%a{name: "code-of-conducts"}
+  %h2 Code of conducts
 
 %ul
   - code_of_conducts.each do |name, url|
@@ -39,7 +40,8 @@
       %a{href: url}
         = name
 
-%h2 Trademark policies
+%a{name: "trademark-policies"}
+  %h2 Trademark policies
 
 %ul
   - trademark_policies.each do |name, url|
