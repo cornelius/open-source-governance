@@ -11,7 +11,7 @@ class Model
       puts "  #{yaml["project_name"]}"
 
       org = yaml["organization"]
-      if org && org != "none" && !@orgs.has_key?(org)
+      if org && org != "none" && org != "?" && !@orgs.has_key?(org)
         STDERR.puts "    Unknown organization key '#{org}'"
       end
 
