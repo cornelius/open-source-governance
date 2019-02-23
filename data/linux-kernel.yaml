@@ -13,7 +13,7 @@ licensing_policy_url: "?"
 registered_trademarks: Linux
 contribution_agreement: DCO
 trademark_owner: Linus Torvalds
-code_of_conduct_url: "?"
+code_of_conduct_url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/code-of-conduct.rst
 conflict_resolution_policy_url: "?"
 maintainers_list_url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/MAINTAINERS
 project_wikidata_id: Q14579

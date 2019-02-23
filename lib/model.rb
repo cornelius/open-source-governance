@@ -37,4 +37,26 @@ class Model
     read_orgs(data_dir)
     read_projects(data_dir)
   end
+
+  def code_of_conducts
+    result = {}
+    projects.each do |_, project|
+      url = project["code_of_conduct_url"]
+      if url != "none" && url != "?"
+        result[project["project_name"]] = url
+      end
+    end
+    result
+  end
+
+  def trademark_policies
+    result = {}
+    projects.each do |_, project|
+      url = project["trademark_policy_url"]
+      if url != "none" && url != "?"
+        result[project["project_name"]] = url
+      end
+    end
+    result
+  end
 end

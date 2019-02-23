@@ -5,6 +5,18 @@ class View
     model.projects
   end
 
+  def orgs
+    model.orgs
+  end
+
+  def code_of_conducts
+    model.code_of_conducts
+  end
+
+  def trademark_policies
+    model.trademark_policies
+  end
+
   def render_page(view_dir, output_dir, template, page)
     layout = File.read(File.join(view_dir, "layout.html.haml"))
 

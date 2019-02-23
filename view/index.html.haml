@@ -3,6 +3,8 @@
 %p
   This site collects data about open source governance models. Sources are at #{link_up("https://github.com/cornelius/open-source-governance")}
 
+%h2 Projects
+
 %table
   %tr
     %th Name
@@ -14,3 +16,33 @@
           = project["project_name"]
       %td
         = link_up(project["project_url"])
+
+%h2 Organizations
+
+%table
+  %tr
+    %th Name
+    %th Homepage
+  - orgs.each do |name, org|
+    %tr
+      %td
+        %a{href: "org/%{name}.html"}
+          = org["name"]
+      %td
+        = link_up(org["url"])
+
+%h2 Code of conducts
+
+%ul
+  - code_of_conducts.each do |name, url|
+    %li
+      %a{href: url}
+        = name
+
+%h2 Trademark policies
+
+%ul
+  - trademark_policies.each do |name, url|
+    %li
+      %a{href: url}
+        = name
