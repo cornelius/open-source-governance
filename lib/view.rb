@@ -1,5 +1,5 @@
 class View
-  attr_accessor :model, :project, :org, :content
+  attr_accessor :model, :project, :org, :content, :prefix
 
   def projects
     model.projects
@@ -17,17 +17,24 @@ class View
     model.trademark_policies
   end
 
-  def render_page(view_dir, output_dir, template, page)
+  def render_page(view_dir, output_dir, template_name, page)
+    puts "Rendering page #{page} (#{template_name}) ..."
     layout = File.read(File.join(view_dir, "layout.html.haml"))
 
-    template = File.read(File.join(view_dir, "#{template}.html.haml"))
+    template = File.read(File.join(view_dir, "#{template_name}.html.haml"))
 
     template_engine = Haml::Engine.new(template)
     @content = template_engine.render(binding)
 
     layout_engine = Haml::Engine.new(layout)
 
-    output_path = File.join(output_dir, "#{page}.html")
+    if template_name == "org"
+      output_path = File.join(output_dir, "orgs", "#{page}.html")
+      @prefix = "../"
+    else
+      output_path = File.join(output_dir, "#{page}.html")
+      @prefix = ""
+    end
     File.open output_path, "w" do |file|
       file.puts layout_engine.render(binding)
     end
@@ -47,6 +54,13 @@ class View
         @org = nil
       end
       render_page(view_dir, output_dir, "project", name)
+    end
+  end
+
+  def render_orgs(view_dir, output_dir)
+    model.orgs.each do |name, org|
+      @org = org
+      render_page(view_dir, output_dir, "org", name)
     end
   end
 

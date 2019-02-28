@@ -33,4 +33,5 @@ else
 
   view.render_index(view_dir, output_dir)
   view.render_projects(view_dir, output_dir)
+  view.render_orgs(view_dir, output_dir)
 end
