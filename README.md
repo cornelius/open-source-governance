@@ -9,3 +9,11 @@ There is a simple web site generated from the data available in the `docs` direc
 If you have questions or comments please don't hesitate to open an issue or contact Cornelius Schumacher <schumacher@kde.org>.
 
 The code is published under the MIT license. The data in the `data` directory is [public domain](https://creativecommons.org/publicdomain/zero/1.0/).
+
+## Interesting links
+
+Some links to interersting material regarding open source governance:
+
+* [Open Source Gerrymandering](https://www.aniszczyk.org/2019/10/08/open-source-gerrymandering/) - Details and history of governance on some prominent open source projects
+* [Open Governance](https://github.com/opengovernance/opengovernance.dev) - Criteria for open governance
+* [The Role of Foundations in Open Source Projects](https://livablesoftware.com/study-open-source-foundations/) - Research about the role of foundations in open source projects
