@@ -1,0 +1,22 @@
+---
+# Version of the YAML schema used for this file. v1 is going to change without notice. Later versions will be kept stable.
+"$schema": open-source-governance/org/v1#
+
+# Name of the organization providing governance to the project
+name: "Legion of the Bouncy Castle Inc."
+# Main URL of the organization
+url: "https://www.bouncycastle.org/about.html"
+# Wikidata id of organization. Search for it on https://www.wikidata.org.
+wikidata_id: "?"
+# Type of organization. Examples would be US "501(c)(6)" or German "Eingetragener Verein"
+type: "Registered Charity"
+# Country where the organization is incorporated
+country: "Australia"
+# Date when the organization was founded. Use an ISO date. If day or month is not know, leave it out.
+founding_date: "2013-10"
+# Link to bylaws of the organization
+bylaws_url: "https://acncpubfilesprodstorage.blob.core.windows.net/public/36db11f8-39af-e811-a963-000d3ad24077-c7f7478c-387e-4e5b-bd2c-c0c199cc41b3-Governing%20Document-2d9485de-4cb0-e811-a962-000d3ad24a0d-LegionRules.pdf"
+# Maximum fee for corporate members of the organization
+maximum_corporate_membership_fee: "?"
+# Link to annual report of the organization
+annual_report: "https://www.acnc.gov.au/charity/390a94c0f97cc6e8942ac4ba0628169f"
