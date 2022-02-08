@@ -20,3 +20,5 @@ Some links to interersting material regarding open source governance:
 * [Open Governance](https://github.com/opengovernance/opengovernance.dev) - Criteria for open governance
 * [The Role of Foundations in Open Source Projects](https://livablesoftware.com/study-open-source-foundations/) - Research about the role of foundations in open source projects
 * [Minimal Viable Governance](https://github.com/github/MVG) - A template for a simple open source governance model which can be applied to a git repository
+* [FOSS Foundations](https://www.cyrius.com/foss-foundations/) - Research reports about free and open source software foundations
+* 
